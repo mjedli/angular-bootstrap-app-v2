@@ -11,6 +11,8 @@ export class TableComponentComponent implements OnInit {
 
   constructor(public appService : AppService, public router : Router) { }
 
+  const MESSAGE_INFO:String = "You should select un component !";
+
   title:String = "Component";
 
   ngOnInit() {
@@ -24,7 +26,7 @@ export class TableComponentComponent implements OnInit {
     if (this.appService.currentIdSelected !== 0) {
       this.router.navigateByUrl("/modify");
     } else {
-      this.appService.setAlertMessage("You should select un component !");
+      this.appService.setAlertMessage(this.MESSAGE_INFO);
       this.router.navigateByUrl("/alert");
     }
   }
@@ -33,7 +35,7 @@ export class TableComponentComponent implements OnInit {
     if (this.appService.currentIdSelected !== 0) {
       this.router.navigateByUrl("/remove");
     } else {
-      this.appService.setAlertMessage("You should select un component !");
+      this.appService.setAlertMessage(this.MESSAGE_INFO);
       this.router.navigateByUrl("/alert");
     }
   }
