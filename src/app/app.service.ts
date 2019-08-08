@@ -23,18 +23,30 @@ export class AppService {
 
   alertMessage:String = "";
 
+  /*
+  * setAlertMessage
+  */
   public setAlertMessage(alertMessage:String) {
     this.alertMessage = alertMessage;
   }
 
+  /*
+  * setSearchValue
+  */
   public setSearchValue(searchValue:String) {
     this.searchValue = searchValue;
   }
 
+  /*
+  * setCurrentIdSelected
+  */
   public setCurrentIdSelected(currentNumber:number) {
     this.currentIdSelected = currentNumber;
   }
 
+  /*
+  * addComponent
+  */
   public addComponent(myComponent:MyComponent):void {
 
     let currentId = 1;
@@ -50,10 +62,16 @@ export class AppService {
 
   }
 
+  /*
+  * getComponentByCurrentId
+  */
   public getComponentByCurrentId():MyComponent {
     return this.list.find(x => x.id == this.currentIdSelected);
   }
 
+  /*
+  * modifiyComponent
+  */
   public modifiyComponent(myComponent:MyComponent):void {
     const index = this.list.findIndex((e) => e.id === myComponent.id);
 
@@ -64,6 +82,9 @@ export class AppService {
     }
   }
 
+  /*
+  * removeComponent
+  */
   public removeComponent() {
     const index = this.list.findIndex((e) => e.id === this.currentIdSelected);
 
@@ -73,6 +94,9 @@ export class AppService {
     this.currentIdSelected = 0; 
   }
 
+  /*
+  * getAllComponent
+  */
   public getAllComponent():MyComponent[] {
     let list : MyComponent[] = [];
     if(this.searchValue === "") {
