@@ -1,0 +1,45 @@
+<table class="table table-striped tab-app">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"><a (click)="getAllComponentPerPageTri(true,flase)">Title<i class="material-icons">swap_vert</i></a></th>
+      <th scope="col"><a (click)="getAllComponentPerPageTri(false,true)">Adresse<i class="material-icons">swap_vert</i></a></th>
+      <th scope="col" colspan="2">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let comp of myComponent">
+      <th scope="row">{{comp.id}}</th>
+      <td>{{comp.title}}</td>
+      <td>{{comp.adresse}}</td>
+      <td>{{comp.type}}</td>
+      <td *ngIf="comp.id==currentId"><input #inputEl type="checkbox"  checked  (change)="onSelectRow(comp.id,inputEl.checked)"></td>
+      <td *ngIf="comp.id!=currentId"><input #inputEl type="checkbox" (change)="onSelectRow(comp.id,inputEl.checked)"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div align="center" class="tab-app">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-right">
+      <li class="page-item">
+        <a (click)="getAllComponentPrevPage()" class="page-link" href="#" aria-label="Previous">
+          <span  aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <span *ngFor="let number of listOfPage">
+        <li *ngIf="currentPage==number" class="page-item active">
+          <a  (click)="getAllComponentPerPage(number)" class="page-link" href="#">{{number}}</a>
+        </li>
+      <li class="page-item">
+        <a *ngIf="currentPage!=number" (click)="getAllComponentPerPage(number)" class="page-link" href="#">{{number}}</a>
+      </li>
+      </span>
+      <li class="page-item">
+        <a (click)="getAllComponentNextPage()" class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
