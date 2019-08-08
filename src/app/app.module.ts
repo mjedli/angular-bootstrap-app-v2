@@ -13,11 +13,13 @@ import { AddComponent } from './add/add.component';
 import { ModifyComponent } from './modify/modify.component';
 import { RemoveComponent } from './remove/remove.component';
 import { AppService } from './app.service';
+import { AlertComponent } from './alert/alert.component';
 
 const appRoutes: Routes = [
   { path: 'add', component: AddComponent },
   { path: 'modify', component: ModifyComponent },
   { path: 'remove', component: RemoveComponent },
+  { path: 'alert', component: AlertComponent },
   { path: '**', component: TableComponent }
 ];
 
@@ -30,7 +32,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ) ],
-  declarations: [ AppComponent, HelloComponent, ToolbarComponent, FooterComponent, TableComponentComponent, TableComponent, AddComponent, ModifyComponent, RemoveComponent ],
+  declarations: [ AppComponent, HelloComponent, ToolbarComponent, FooterComponent, TableComponentComponent, TableComponent, AddComponent, ModifyComponent, RemoveComponent, AlertComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AppService]
 })

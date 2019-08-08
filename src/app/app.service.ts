@@ -21,6 +21,12 @@ export class AppService {
   currentIdSelected:number = 0;
   searchValue:String = "";
 
+  alertMessage:String = "";
+
+  public setAlertMessage(alertMessage:String) {
+    this.alertMessage = alertMessage;
+  }
+
   public setSearchValue(searchValue:String) {
     this.searchValue = searchValue;
   }

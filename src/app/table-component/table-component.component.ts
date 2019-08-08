@@ -24,7 +24,8 @@ export class TableComponentComponent implements OnInit {
     if (this.appService.currentIdSelected !== 0) {
       this.router.navigateByUrl("/modify");
     } else {
-
+      this.appService.setAlertMessage("You should select un component !");
+      this.router.navigateByUrl("/alert");
     }
   }
 
@@ -32,7 +33,8 @@ export class TableComponentComponent implements OnInit {
     if (this.appService.currentIdSelected !== 0) {
       this.router.navigateByUrl("/remove");
     } else {
-      
+      this.appService.setAlertMessage("You should select un component !");
+      this.router.navigateByUrl("/alert");
     }
   }
 
