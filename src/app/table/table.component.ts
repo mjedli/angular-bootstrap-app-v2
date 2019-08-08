@@ -34,7 +34,7 @@ export class TableComponent implements OnInit {
     this.myComponent = [];
 
     for (var t = (start-1)*this.numberElement; t < start*this.numberElement; t++) {
-      if(allComponent[t] != null)
+      if (allComponent[t] != null)
       this.myComponent.push(allComponent[t]);
     }
 
@@ -47,7 +47,7 @@ export class TableComponent implements OnInit {
         }
     }
 
-    if(count !== 0) {
+    if (count !== 0) {
       this.numberPages = this.numberPages+1;
     }
 
