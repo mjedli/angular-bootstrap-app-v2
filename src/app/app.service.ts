@@ -15,8 +15,7 @@ export class AppService {
     {id : 6, title : "titre 6", adresse : "adresse 7", type : true},
     {id : 7, title : "titre 8", adresse : "adresse 6", type : false},
     {id : 8, title : "titre 7", adresse : "adresse 9", type : false},
-    {id : 9, title : "titre 10", adresse : "adresse 8", type : false},
-    {id : 10, title : "titre 9", adresse : "adresse 10", type : false},
+    {id : 9, title : "titre 9", adresse : "adresse 8", type : false},
   ];
 
   currentIdSelected:number = 0;
