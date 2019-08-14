@@ -1,7 +1,11 @@
+
 .tab-app{
-  width: 920px;
+  //width: 920px;
+  width: 97%;
 }
 
+
+/*
 @media screen and (min-width: 415px) and (max-width: 919px) {
   .tab-app{
     width: 580px;
@@ -31,4 +35,5 @@
     width: 300px;
   }
 }
+*/
 

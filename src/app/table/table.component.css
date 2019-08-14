@@ -1,5 +1,6 @@
 .tab-app{
-  width: 920px;
+  //width: 920px;
+  width: 95%;
   margin-top: 10px;
 }
 .page-item.active .page-link {
@@ -8,6 +9,8 @@
   background-color: #dee2e6;
   border-color: #dee2e6;
 }
+
+/*
 
 @media screen and (min-width: 415px) and (max-width: 919px) {
   .tab-app{
@@ -43,4 +46,5 @@
     margin-top: 10px;
   }
 }
+*/
 
