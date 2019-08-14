@@ -11,7 +11,7 @@ export class TableComponentComponent implements OnInit {
 
   constructor(public appService : AppService, public router : Router) { }
 
-  const MESSAGE_INFO:String = "You should select un component !";
+  const MESSAGE_INFO:String = "You should select a component !";
 
   title:String = "Component";
 
