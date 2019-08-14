@@ -10,7 +10,7 @@
   border-color: #dee2e6;
 }
 
-@media screen and (min-width: 415px) and (max-width: 769px) {
+@media screen and (min-width: 415px) and (max-width: 919px) {
   .tab-app{
     width: 580px;
     margin-top: 10px;
