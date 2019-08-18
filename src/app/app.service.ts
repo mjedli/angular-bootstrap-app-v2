@@ -7,15 +7,15 @@ export class AppService {
   constructor() { }
 
   list  : MyComponent[] = [
-    {id : 1, title : "titre 3", adresse : "adresse 1", type : true},
-    {id : 2, title : "titre 2", adresse : "adresse 4", type : false},
-    {id : 3, title : "titre 1", adresse : "adresse 3", type : false},
-    {id : 4, title : "titre 4", adresse : "adresse 2", type : false},
-    {id : 5, title : "titre 5", adresse : "adresse 5", type : false},
-    {id : 6, title : "titre 6", adresse : "adresse 7", type : true},
-    {id : 7, title : "titre 8", adresse : "adresse 6", type : false},
-    {id : 8, title : "titre 7", adresse : "adresse 9", type : false},
-    {id : 9, title : "titre 9", adresse : "adresse 8", type : false},
+    {id : 1, title : "titre 3", adresse : "address 1", type : true},
+    {id : 2, title : "titre 2", adresse : "address 4", type : false},
+    {id : 3, title : "titre 1", adresse : "address 3", type : false},
+    {id : 4, title : "titre 4", adresse : "address 2", type : false},
+    {id : 5, title : "titre 5", adresse : "address 5", type : false},
+    {id : 6, title : "titre 6", adresse : "address 7", type : true},
+    {id : 7, title : "titre 8", adresse : "address 6", type : false},
+    {id : 8, title : "titre 7", adresse : "address 9", type : false},
+    {id : 9, title : "titre 9", adresse : "address 8", type : false},
   ];
 
   currentIdSelected:number = 0;
