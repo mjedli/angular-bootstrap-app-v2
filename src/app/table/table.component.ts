@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AppService } from '../app.service';
 import { MyComponent } from '../my.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-table',
@@ -9,7 +10,7 @@ import { MyComponent } from '../my.component';
 })
 export class TableComponent implements OnInit {
 
-  constructor(public appService : AppService) { }
+  constructor(public appService : AppService, public router : Router) { }
 
   myComponent:MyComponent[];
 
@@ -111,6 +112,9 @@ export class TableComponent implements OnInit {
     } else {
       this.appService.setCurrentIdSelected(0);
     }
+
+    this.router.navigateByUrl('/add', {skipLocationChange: true}).then(()=>
+    this.router.navigateByUrl('/')); 
   }
 
   sortListByTitle(myListComponent:MyComponent[]) {
