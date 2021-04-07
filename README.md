@@ -28,3 +28,12 @@ npm install -g @angular/cli}
 ```
 
 ###  Démarrer une application
+- Utiliser angular/cli sous node pour céer un projet node :
+```
+ng new my-app
+```
+- Démmarer l'application 
+```
+cd my-app
+ng serve --open
+```
