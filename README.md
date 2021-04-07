@@ -82,3 +82,25 @@ index.html
 - MVC (Model-View-Controller) : le contrôleur manipule le modèle, la vue affiche le modèle
 - MVVM (Model-View-ViewModel) : le modèle MVVM prend en charge la liaison de données bidirectionnelle entre View et ViewModel.
 
+###  Angular Test Unitaire (Jasmine & Karma)
+
+```
+@Injectable()
+export class MasterService {
+  constructor(private valueService: ValueService) { }
+  getValue() { return this.valueService.getValue(); }
+}
+```
+
+```
+describe('MasterService without Angular testing support', () => {
+  let masterService: MasterService;
+
+ it('#getValue should return faked value from a fake object', () => {
+    const fake =  { getValue: () => 'fake value' };
+    masterService = new MasterService(fake as ValueService);
+    expect(masterService.getValue()).toBe('fake value');
+  });
+
+});
+```
