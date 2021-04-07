@@ -66,7 +66,7 @@ export class TableComponentComponent implements OnInit {
 ```
 Template : component-overview.component.html
 ```
-<h3>{{name}} says:</h3>
+<h3>{{name}}</h3>
 ```
 index.html
 ```
