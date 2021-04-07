@@ -43,3 +43,16 @@ cd my-app
 ng serve --open
 ```
 - Ouvrir l'application dans un navigateur avec ce lien : http://localhost:4200/
+
+###  Angular c'est quoi ?
+
+- Angular est un ensemble de composant.
+- Un composant point sur une template (un fichier html) avec un selector qui représente une balis.
+- Un composant point aussi sur un fichier css
+```
+@Component({
+  selector: 'app-component-overview',
+  templateUrl: './component-overview.component.html',
+  styleUrls: ['./component-overview.component.css']
+})
+```
