@@ -72,3 +72,8 @@ index.html
 ```
 <app-component-overview></app-component-overview>
 ```
+
+###  Angular MVC - MVVM
+- MVC (Model-View-Controller) : le contrôleur manipule le modèle, la vue affiche le modèle
+- MVVM (Model-View-ViewModel) : le modèle MVVM prend en charge la liaison de données bidirectionnelle entre View et ViewModel.
+
