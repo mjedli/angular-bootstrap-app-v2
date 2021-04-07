@@ -13,7 +13,7 @@
 - Composants web qui peuvent être utilisés dans n'importe quels autres projets ou technologies web.
 - Progressive Web Apps (PWA).
 
-### L'ensemble des technologies qui gravitent autour d'Angular
+### Parmi les technologies qui gravitent autour d'Angular
 
 - TypeScript : Angular utilise par défaut le langage TypeScript de Microsoft (JavaScript ES6, légèrement remanié).
 - Redux : se présente comme un système de centralisation des données et des actions.
