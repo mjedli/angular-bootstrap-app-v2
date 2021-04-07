@@ -84,28 +84,6 @@ index.html
 
 ###  Angular Test Unitaire (Jasmine & Karma)
 
-- Test de Service
-```
-@Injectable()
-export class MasterService {
-  constructor(private valueService: ValueService) { }
-  getValue() { return this.valueService.getValue(); }
-}
-```
-
-```
-describe('MasterService without Angular testing support', () => {
-  let masterService: MasterService;
-
- it('#getValue should return faked value from a fake object', () => {
-    const fake =  { getValue: () => 'fake value' };
-    masterService = new MasterService(fake as ValueService);
-    expect(masterService.getValue()).toBe('fake value');
-  });
-
-});
-```
-
 - Test de composant 
 
 ```
@@ -139,5 +117,27 @@ describe('LightswitchComp', () => {
     comp.clicked();
     expect(comp.message).toMatch(/is on/i, 'on after clicked');
   });
+});
+```
+
+- Test de Service
+```
+@Injectable()
+export class MasterService {
+  constructor(private valueService: ValueService) { }
+  getValue() { return this.valueService.getValue(); }
+}
+```
+
+```
+describe('MasterService without Angular testing support', () => {
+  let masterService: MasterService;
+
+ it('#getValue should return faked value from a fake object', () => {
+    const fake =  { getValue: () => 'fake value' };
+    masterService = new MasterService(fake as ValueService);
+    expect(masterService.getValue()).toBe('fake value');
+  });
+
 });
 ```
