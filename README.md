@@ -58,5 +58,5 @@ ng serve --open
 ```
 component-overview.component.html
 ```
-<app-component-overview> </app-component-overview>
+<app-component-overview></app-component-overview>
 ```
