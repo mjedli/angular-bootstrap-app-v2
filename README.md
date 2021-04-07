@@ -2,7 +2,11 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-bootstrap-app-v2)
 
-# Présentation
+# Présentation d'un prjet angular :
+
+### Version angular :
+
+
 
 ### Angular est un framework JavaScript complet
 
