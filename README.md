@@ -106,7 +106,7 @@ describe('MasterService without Angular testing support', () => {
 });
 ```
 
-Test de composant 
+- Test de composant 
 
 ```
 @Component({
