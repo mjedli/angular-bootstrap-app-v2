@@ -9,6 +9,11 @@
 - Version Angular : 8+
 - Version tutoriel : 1.0
 
+### Source :
+
+- Angular docs : https://angular.io/docs
+- Article developpez : https://iner-dukoid.developpez.com/tutoriels/web/introduction-framework-web-angular/
+
 ### Angular est un framework JavaScript complet
 
 ### Avec Angular on peut créer :
