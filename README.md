@@ -6,8 +6,8 @@
 
 ### Version angular :
 
-Version Angular : 8+
-Version tutoriel : 1.
+- Version Angular : 8+
+- Version tutoriel : 1.0
 
 ### Angular est un framework JavaScript complet
 
