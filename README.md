@@ -7,4 +7,5 @@
 - Angular est un framework JavaScript complet
 
 - Avec Angular on peut créer :
- * Single Page App : sur une seule page web on peut tourner l'application de façon dynamique.
+
+Single Page App : sur une seule page web on peut tourner l'application de façon dynamique.
