@@ -2,7 +2,7 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-bootstrap-app-v2)
 
-# Présentation d'un prjet angular :
+# Présentation d'un projet angular :
 
 ### Version angular :
 
