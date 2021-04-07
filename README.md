@@ -62,10 +62,12 @@ export class TableComponentComponent implements OnInit {
   ngOnInit() {
   }
 }
-
 ```
 component-overview.component.html
 ```
-<app-component-overview></app-component-overview>
 <h3>{{hero.name}} says:</h3>
+```
+index.html
+```
+<app-component-overview></app-component-overview>
 ```
