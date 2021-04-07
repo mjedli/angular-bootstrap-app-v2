@@ -58,7 +58,7 @@ ng serve --open
 })
 export class TableComponentComponent implements OnInit {
   
-  @Input() hero: Hero;
+  name = 'Angular ' + VERSION.major;
 
   ngOnInit() {
   }
@@ -66,7 +66,7 @@ export class TableComponentComponent implements OnInit {
 ```
 Template : component-overview.component.html
 ```
-<h3>{{hero.name}} says:</h3>
+<h3>{{name}} says:</h3>
 ```
 index.html
 ```
