@@ -78,6 +78,28 @@ index.html
 <app-component-overview></app-component-overview>
 ```
 
+### app.module
+
+- app.module a pour seule fonctionnalité : le « point de démarrage ».
+- Le module racine : app.module.ts représente le contexte de démarrage de l'application et ne dispose que d'un seul composant : app.component
+- /src/app/app.module.ts
+
+```
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+
+@NgModule({
+  imports:      [ BrowserModule, FormsModule ],
+  declarations: [ AppComponent, HelloComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ###  Angular MVC - MVVM
 - MVC (Model-View-Controller) : le contrôleur manipule le modèle, la vue affiche le modèle
 - MVVM (Model-View-ViewModel) : le modèle MVVM prend en charge la liaison de données bidirectionnelle entre View et ViewModel.
