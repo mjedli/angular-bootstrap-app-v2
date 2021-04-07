@@ -16,5 +16,13 @@
 ### L'ensemble des technologies qui gravitent autour d'Angular
 
 - TypeScript : Angular utilise par défaut le langage TypeScript de Microsoft (JavaScript ES6, légèrement remanié).
-- Redux :se présente comme un système de centralisation des données et des actions.
+- Redux : se présente comme un système de centralisation des données et des actions.
 - Webpack : c'est le gestionnaire de ressources (CSS, images…) qui est intégré dans Angular
+- Les tests unitaires : Jasmine & Karma
+
+###  Angular : ce qu'il faut pour démarrer
+- node.js : installer node.js (de préférence, la version LTS)
+- Installation d'angular-cli
+```
+npm install -g @angular/cli}
+```
