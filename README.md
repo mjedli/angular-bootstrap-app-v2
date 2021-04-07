@@ -84,6 +84,7 @@ index.html
 
 ###  Angular Test Unitaire (Jasmine & Karma)
 
+- Test de Service
 ```
 @Injectable()
 export class MasterService {
@@ -102,5 +103,41 @@ describe('MasterService without Angular testing support', () => {
     expect(masterService.getValue()).toBe('fake value');
   });
 
+});
+```
+
+Test de composant 
+
+```
+@Component({
+  selector: 'lightswitch-comp',
+  template: `
+    <button (click)="clicked()">Click me!</button>
+    <span>{{message}}</span>`
+})
+export class LightswitchComponent {
+  isOn = false;
+  clicked() { this.isOn = !this.isOn; }
+  get message() { return `The light is ${this.isOn ? 'On' : 'Off'}`; }
+}
+```
+
+```
+describe('LightswitchComp', () => {
+  it('#clicked() should toggle #isOn', () => {
+    const comp = new LightswitchComponent();
+    expect(comp.isOn).toBe(false, 'off at first');
+    comp.clicked();
+    expect(comp.isOn).toBe(true, 'on after click');
+    comp.clicked();
+    expect(comp.isOn).toBe(false, 'off after second click');
+  });
+
+  it('#clicked() should set #message to "is on"', () => {
+    const comp = new LightswitchComponent();
+    expect(comp.message).toMatch(/is off/i, 'off at first');
+    comp.clicked();
+    expect(comp.message).toMatch(/is on/i, 'on after clicked');
+  });
 });
 ```
