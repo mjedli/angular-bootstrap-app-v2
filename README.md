@@ -9,4 +9,5 @@
 ### Avec Angular on peut créer :
 
 - Single Page App : sur une seule page web on peut tourner l'application de façon dynamique.
-- Applications hybrides pour smartphone
+- Applications hybrides pour smartphone avec Ionic 4 ou encore Angular for NativeScript.
+- Composants web qui peuvent être utilisés dans n'importe quels autres projets ou technologies web.
