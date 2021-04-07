@@ -42,4 +42,4 @@ ng new my-app
 cd my-app
 ng serve --open
 ```
-Ouvrir l'application dans un navigateur avec ce lien : http://localhost:4200/
+- Ouvrir l'application dans un navigateur avec ce lien : http://localhost:4200/
