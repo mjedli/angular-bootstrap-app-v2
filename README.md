@@ -22,7 +22,7 @@
 
 ###  Angular : ce qu'il faut pour démarrer
 - node.js : installer node.js (de préférence, la version LTS)
-- Installation d'angular-cli
+- Installation d'angular-cli avec terminal node :
 ```
 npm install -g @angular/cli}
 ```
