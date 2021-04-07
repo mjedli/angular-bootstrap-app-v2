@@ -55,8 +55,17 @@ ng serve --open
   templateUrl: './component-overview.component.html',
   styleUrls: ['./component-overview.component.css']
 })
+export class TableComponentComponent implements OnInit {
+  
+  @Input() hero: Hero;
+
+  ngOnInit() {
+  }
+}
+
 ```
 component-overview.component.html
 ```
 <app-component-overview></app-component-overview>
+<h3>{{hero.name}} says:</h3>
 ```
