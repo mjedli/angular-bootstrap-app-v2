@@ -26,3 +26,5 @@
 ```
 npm install -g @angular/cli}
 ```
+
+###  Démarrer une application
