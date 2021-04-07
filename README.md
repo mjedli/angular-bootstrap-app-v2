@@ -47,7 +47,8 @@ ng serve --open
 ###  Angular c'est quoi ?
 
 - Angular est un ensemble de composant.
-- Un composant point sur une template (un fichier html) avec un selector qui représente une balis.
+- Un composant point sur une template (un fichier html).
+- Un composant s'affiche dans un fichier html avec un selector qui représente une balis.
 - Un composant point aussi sur un fichier css.
 ```
 @Component({
@@ -63,7 +64,7 @@ export class TableComponentComponent implements OnInit {
   }
 }
 ```
-component-overview.component.html
+Template : component-overview.component.html
 ```
 <h3>{{hero.name}} says:</h3>
 ```
