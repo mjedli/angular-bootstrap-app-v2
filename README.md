@@ -48,11 +48,15 @@ ng serve --open
 
 - Angular est un ensemble de composant.
 - Un composant point sur une template (un fichier html) avec un selector qui représente une balis.
-- Un composant point aussi sur un fichier css
+- Un composant point aussi sur un fichier css.
 ```
 @Component({
   selector: 'app-component-overview',
   templateUrl: './component-overview.component.html',
   styleUrls: ['./component-overview.component.css']
 })
+```
+component-overview.component.html
+```
+<app-component-overview> </app-component-overview>
 ```
