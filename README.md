@@ -126,7 +126,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-le code de ng module : Ajouter la class AppRoutingModule au module.
+Le code de ng module : Ajouter la class AppRoutingModule au module.
 ```
 @NgModule({
   declarations: [
