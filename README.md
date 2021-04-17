@@ -142,6 +142,33 @@ describe('LightswitchComp', () => {
 });
 ```
 
+- APP ROUTING
+The Class angular for routing
+```
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { SettingsComponent } from './settings/settings.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'home', component: HomeComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+The html code : add the routerLink
+```
+<a class="nav-link active" routerLink="/home">
+```
+
 - Test de Service
 ```
 @Injectable()
