@@ -126,6 +126,26 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
+The module code : add the AppRoutingModule class to the app module
+```
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SettingsComponent,
+    LoginComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
+  providers: [HomeService, SettingsService, HttpErrorHandler, MessageService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
 The html code : add the routerLink
 ```
 <a class="nav-link active" routerLink="/home">
