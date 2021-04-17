@@ -105,7 +105,7 @@ export class AppModule { }
 - MVVM (Model-View-ViewModel) : le modèle MVVM prend en charge la liaison de données bidirectionnelle entre View et ViewModel.
 
 ### APP ROUTING
-The Class angular for routing
+Ajouter la class angular pour gérer le routing.
 ```
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -126,7 +126,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-The module code : add the AppRoutingModule class to the app module
+le code de ng module : Ajouter la class AppRoutingModule au module.
 ```
 @NgModule({
   declarations: [
