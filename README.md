@@ -146,7 +146,7 @@ Le code de ng module : Ajouter la class AppRoutingModule aux modules.
 export class AppModule { }
 ```
 
-The html code : add the routerLink
+Le code html : Ajouter : routerLink
 ```
 <a class="nav-link active" routerLink="/home">
 ```
