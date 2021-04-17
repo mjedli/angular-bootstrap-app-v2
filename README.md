@@ -210,7 +210,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-// Test de attribut title
+// Test d'attribut title
 
   it(`should have as title 'angular8'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
