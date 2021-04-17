@@ -188,6 +188,46 @@ describe('LightswitchComp', () => {
   });
 });
 ```
+Test de composant dans un fichier .spec // app.component.spec.ts
+```
+describe('AppComponent', () => {
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [
+        AppComponent
+      ],
+    }).compileComponents();
+  }));
+
+// Test de creation
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+// Test de attribut title
+
+  it(`should have as title 'angular8'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.title).toEqual('angular8');
+  });
+
+// Test d'attribution de l'attribut "title"
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.content span').textContent).toContain('angular8 app is running!');
+  });
+});
+```
 
 - Test de Service
 ```
